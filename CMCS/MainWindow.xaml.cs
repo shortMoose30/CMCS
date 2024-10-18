@@ -13,6 +13,7 @@ namespace ContractClaimSystem
         {
             SubmitClaim submitClaimPage = new SubmitClaim();
             submitClaimPage.Show();
+            submitClaimPage.Show();
             this.Close();
         }
 
