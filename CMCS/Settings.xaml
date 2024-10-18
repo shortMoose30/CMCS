@@ -1,0 +1,19 @@
+<Window x:Class="ContractClaimSystem.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="600" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Settings" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Update User Information" FontSize="16" Margin="0,10,0,5"/>
+            <TextBlock Text="User Name"/>
+            <TextBox Name="txtUserName" Width="200" Margin="0,5"/>
+
+            <TextBlock Text="Email"/>
+            <TextBox Name="txtEmail" Width="200" Margin="0,5"/>
+
+            <Button Content="Save Changes" Width="120" Height="30" Margin="10,20,0,0" Click="BtnSaveSettings_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+<Window x:Class="ContractClaimSystem.ViewClaims"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="View Claims" Height="600" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Submitted Claims" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+            <ListView Name="lvSubmittedClaims" Height="400">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Contract ID" DisplayMemberBinding="{Binding ContractID}" Width="150"/>
+                        <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Amount}" Width="100"/>
+                        <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="200"/>
+                        <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Button Content="Refresh" Width="120" Height="30" HorizontalAlignment="Left" Margin="0,20,0,0" Click="BtnRefresh_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
